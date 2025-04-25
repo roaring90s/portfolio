@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import '../styles/About.css';
 import '../styles/App.css';
+import profilePic from '../assets/profile-pic.jpeg';
+import tccPic from '../assets/tcc-pic.jpeg';
+
 
 const About = () => {
     const [language, setLanguage] = useState('pt'); // Estado para o idioma da página
@@ -24,7 +27,7 @@ const About = () => {
 
             {/* Espaço para imagem */}
             <div className="about-image">
-                <img src="src/assets/profile-pic.jpeg" alt="Foto de Marcos" />
+        <img src={profilePic} alt="Foto de Marcos" className="intro-image" />
             </div>
 
             <p>
@@ -48,7 +51,7 @@ const About = () => {
                 <h3>{language === 'pt' ? 'Sobre o meu TCC' : 'About my Final Project'}</h3>
 
                 <div className="tcc-image">
-                    <img src="src/assets/tcc-pic.jpeg" alt="Imagem do TCC" />
+                    <img src={tccPic} alt="Imagem do TCC" />
                 </div>
 
                 <p>
