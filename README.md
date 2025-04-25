@@ -1,12 +1,56 @@
-# React + Vite
+# Marcos Sousa - Data Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao meu portfólio! Aqui, você pode explorar os projetos que tenho desenvolvido ao longo do tempo, focando em tecnologia, dados, automação e desenvolvimento web. O portfólio foi criado com React e Vite, buscando proporcionar uma experiência agradável e responsiva.
 
-Currently, two official plugins are available:
+## Link para o Portfólio Online
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Você pode acessar meu portfólio online [aqui](https://marcossousa-dataportfolio.vercel.app/).
 
-## Expanding the ESLint configuration
+## Projetos em Destaque
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+No portfólio, você encontrará alguns dos projetos mais recentes nos quais trabalhei, com detalhes sobre as ferramentas utilizadas, a descrição do projeto e links para os repositórios no GitHub.
+
+## Tecnologias Utilizadas
+
+- **React**: Biblioteca JavaScript para construir interfaces interativas.
+- **Vite**: Ferramenta moderna para desenvolvimento rápido e eficiente.
+- **CSS**: Para uma estilização responsiva e adaptada a diferentes tamanhos de tela.
+- **Git & GitHub**: Controle de versão e gerenciamento de código-fonte.
+
+## Contribuições
+
+Fique à vontade para sugerir melhorias ou relatar problemas. Caso queira contribuir, basta criar uma issue ou enviar um pull request.
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+
+---
+
+# Marcos Sousa - Data Portfolio
+
+Welcome to my portfolio! Here, you can explore the projects I’ve been developing over time, focusing on technology, data, automation, and web development. The portfolio is built with React and Vite, aiming to provide a smooth and responsive experience.
+
+## Link to Online Portfolio
+
+You can access my online portfolio [here](https://marcossousa-dataportfolio.vercel.app/).
+
+## Featured Projects
+
+In the portfolio, you’ll find some of my latest projects, with details about the tools used, project descriptions, and links to the GitHub repositories.
+
+## Technologies Used
+
+- **React**: A JavaScript library for building interactive user interfaces.
+- **Vite**: A modern tool for fast and efficient development.
+- **CSS**: For responsive styling across different screen sizes.
+- **Git & GitHub**: Version control and code management.
+
+## Contributions
+
+Feel free to suggest improvements or report issues. If you'd like to contribute, simply create an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
