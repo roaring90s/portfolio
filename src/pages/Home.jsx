@@ -56,7 +56,7 @@ const Home = () => {
 
             {/* Introdução */}
             <div className={`intro-container ${isVisible ? 'visible' : ''}`}>
-            <img src={profilePic} alt="Foto de Marcos" />
+            <img src={profilePic} alt="Foto de Marcos" className="intro-image" />
                 <h1 className="intro-title">Marcos Sousa</h1>
                 <h3 className="intro-subtitle">
                     {language === 'pt'
