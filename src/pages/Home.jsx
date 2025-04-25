@@ -3,6 +3,7 @@ import { useSwipeable } from 'react-swipeable';
 import ProjectCard from '../components/ProjectCard';
 import { translations } from '../translations';
 import { projects } from '../data/projects'; 
+import profilePic from '../assets/profile-pic.jpeg';
 
 const Home = () => {
     const [language, setLanguage] = useState('pt');
@@ -55,7 +56,7 @@ const Home = () => {
 
             {/* Introdução */}
             <div className={`intro-container ${isVisible ? 'visible' : ''}`}>
-                <img src="src/assets/profile-pic.jpeg" alt="Foto de Marcos" className="intro-image"/>
+            <img src={profilePic} alt="Foto de Marcos" />
                 <h1 className="intro-title">Marcos Sousa</h1>
                 <h3 className="intro-subtitle">
                     {language === 'pt'
