@@ -17,15 +17,6 @@ No portfólio, você encontrará alguns dos projetos mais recentes nos quais tra
 - **CSS**: Para uma estilização responsiva e adaptada a diferentes tamanhos de tela.
 - **Git & GitHub**: Controle de versão e gerenciamento de código-fonte.
 
-## Contribuições
-
-Fique à vontade para sugerir melhorias ou relatar problemas. Caso queira contribuir, basta criar uma issue ou enviar um pull request.
-
-## Licença
-
-Este projeto está licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-
 ---
 
 # Marcos Sousa - Data Portfolio
@@ -46,11 +37,3 @@ In the portfolio, you’ll find some of my latest projects, with details about t
 - **Vite**: A modern tool for fast and efficient development.
 - **CSS**: For responsive styling across different screen sizes.
 - **Git & GitHub**: Version control and code management.
-
-## Contributions
-
-Feel free to suggest improvements or report issues. If you'd like to contribute, simply create an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
