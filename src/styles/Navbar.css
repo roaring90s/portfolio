@@ -1,0 +1,100 @@
+/* Garante que o HTML e o Body não ultrapassem a largura da tela */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;  /* Impede rolagem horizontal */
+    margin: 0;  /* Remove qualquer margem padrão */
+}
+
+/* Navbar principal */
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 20px;
+    background-color: transparent; 
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none; /* remove o sublinhado */
+    font-weight: 500; /* opcional: dá uma leve destacada */
+}
+
+/* Hamburger alinhado à direita */
+.hamburger {
+    display: flex;
+    margin-left: auto; /* Alinha o hamburger à direita */
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    gap: 8px;
+    display: flex;
+    margin-left:auto;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: #5976a8;
+    transition: right 0.3s ease;
+    z-index: 999;
+    padding-top: 80px;
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar li {
+    margin: 20px 0;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+
+/* MOBILE MENU */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        overflow-x: hidden; /* Impede qualquer overflow horizontal */
+    }  
+
+    .hamburger {
+        display: flex;
+        margin-left: auto; /* Alinha o hamburger à direita */
+    }
+}

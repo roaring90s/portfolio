@@ -1,0 +1,51 @@
+.education-section {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #eff2ff;
+}
+
+.education-section h2 {
+    font-size: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    
+}
+
+.education-block {
+    background-color:rgba(76, 73, 128, 0.355);
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.8rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.education-block h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: #e2e9ef;
+    text-align: center
+;
+}
+
+.education-details {
+    font-size: 1.2rem;
+    color: #fffdfd;
+}
+
+.education-block p {
+    font-size: 1.1rem;
+    margin-bottom: 3px;
+}
+
+.certification-list {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.certification-list li {
+    margin-bottom: 0.3rem;
+
+}

@@ -1,0 +1,160 @@
+.project-list {
+    display: flex;
+    justify-content: center; /* Centraliza a lista de cards */
+    overflow: hidden; /* Impede que os cards ultrapassem a área visível */
+    width: 100%;
+    padding: 0 10px;
+}
+
+.project-card-container {
+    display: flex;
+    transition: transform 0.5s ease; /* Transição suave */
+    width: max-content; /* Largura adaptável ao conteúdo */
+    min-width: 100%; /* Impede que o container encolha */
+}
+
+.project-card-wrapper {
+    min-width: 300px; /* Largura do card */
+    margin-right: 20px; /* Espaço entre os cards */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-card {
+    width: 100%;
+    max-width: 300px; /* Largura máxima de cada card */
+    background-color:rgba(76, 73, 128, 0.355);
+    color: #e0e7ff;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.project-card img {
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.project-card h2 {
+    margin-bottom: 5px;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 8px 16px;
+    background: rgba(129, 140, 248, 0.15); /* roxo azulado suave */
+    color: #eaefff; /* tom pastel entre azul e lilás */
+    text-decoration: none;
+    border: 1px solid rgb(91, 107, 188); 
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-weight: 500;
+}
+
+.project-card a:hover {
+    background: rgba(165, 180, 252, 0.25);
+    transform: scale(1.05);
+    color: #e0e7ff;
+}
+
+.project-card p {
+    margin: 2px 0; /* Reduz o espaçamento vertical entre metadados */
+    font-size: 1rem;
+}
+
+.projects-page {
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+.projects-title {
+    text-align: center;
+    font-size: 2rem;
+    color: #e2e9ef;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Reduz um pouco o tamanho dos cards só nessa página */
+.small-card .project-card {
+    max-width: 290px;
+    padding: 16px;
+    font-size: 0.95rem;
+}
+
+.small-card .project-card img {
+    height: 130px;
+}
+
+.projects-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 1200px) {
+    .project-card-wrapper {
+        min-width: 250px; /* Ajusta a largura para telas médias */
+    }
+
+    .project-card {
+        max-width: 250px; /* Ajusta o tamanho máximo do card */
+    }
+}
+
+@media (max-width: 900px) {
+    .project-list {
+        padding: 0 5px; /* Diminui o espaçamento nas telas menores */
+    }
+
+    .project-card-wrapper {
+        min-width: 220px; /* Diminui a largura do card em telas menores */
+    }
+
+    .project-card {
+        max-width: 220px; /* Ajusta o tamanho máximo do card */
+    }
+}
+
+@media (max-width: 600px) {
+    .project-list {
+        flex-direction: column; /* Alinha os cards verticalmente em telas pequenas */
+        align-items: center;
+    }
+
+    .project-card-container {
+        transform: none; /* Remove a transformação de rolagem */
+        width: 100%; /* Garante que o container ocupe toda a largura */
+    }
+
+    .project-card-wrapper {
+        min-width: 89%; /* Ajusta a largura do card para 90% da tela */
+        margin-right: 10px; /* Reduz o espaço entre os cards */
+    }
+
+    .project-card {
+        max-width: 100%; /* Garante que os cards ocupem toda a largura disponível */
+    }
+}

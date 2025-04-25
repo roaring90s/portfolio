@@ -1,0 +1,94 @@
+/* Estilo geral da página de currículo */
+.resume-container {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #e0e7ff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Título da página */
+.resume-title {
+    font-size: 2rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #e2e9ef;
+}
+/* Descrição do currículo */
+.resume-description {
+    font-size: 1.1rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fffdfd;
+}
+
+/* Bloco do currículo */
+.resume-block {
+    background-color: rgba(76, 73, 128, 0.355);
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    margin-bottom: 1.8rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.resume-block h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+    color: #e2e9ef;
+    text-align: center;
+}
+
+.resume-block p {
+    font-size: 1.1rem;
+    margin-bottom: 3px;
+    color: #fffdfd;
+}
+
+.resume-download-btn {
+    display: inline-block;
+    background-color: #0073e6;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-items: center;
+    margin-left: auto; /* Adicionado para centralizar */
+    margin-right: auto; /* Adicionado para centralizar */
+    display: block; /* Mudado de inline-block para block */
+}
+
+.resume-download-btn:hover {
+    background-color: #005bb5;
+}
+
+.linkedin-link {
+    font-size: 1.1rem;
+    text-align: center;
+    color: #fffdfd;
+    display: block; 
+    margin-top: 10px; 
+}
+
+.linkedin-link a {
+    color: #f3f3f4; /* tom pastel entre azul e lilás */
+    background: #0073e6; /* roxo azulado suave */
+    text-decoration: none;
+    display: block; /* Isso faz com que o link ocupe uma linha inteira */
+    margin-top: 8px; /* Adiciona um pequeno espaço entre o texto e o link */
+    font-size: 1.2rem;
+}
+
+.linkedin-link a:hover {
+    text-decoration: underline;
+}
+
+.linkedin-link a i {
+    margin-right: 8px; /* Espaçamento entre o ícone e o texto */
+    font-size: 1.4rem; /* Tamanho do ícone */
+}

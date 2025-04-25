@@ -1,0 +1,186 @@
+/* Reseta as propriedades de padding e margin em todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* Garantindo que o padding e border sejam incluídos nas larguras */
+}
+
+/* Garantir que o corpo não ultrapasse a tela */
+html, body {
+    width: 100%; /* Ajuste para garantir que a largura ocupe toda a tela */
+    overflow-x: hidden; /* Impede rolagem horizontal */
+    height: 100%; /* Garante que o corpo ocupe toda a altura da tela */
+}
+
+body {
+    background-image: url('https://img.freepik.com/vetores-gratis/fundo-abstrato-tuquoise-escuro_1095-274.jpg'); /* Caminho da sua imagem */
+    background-size: cover;       /* Faz a imagem cobrir todo o fundo */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center;  /* Centraliza a imagem */
+    background-attachment: fixed; /* Faz o fundo ficar fixo ao rolar (opcional) */    
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    overflow-x: hidden;  /* Impede rolagem horizontal */
+}
+
+/* Container de Intro */
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+    padding: 1rem;
+    width: 100%;  /* Garante que o container ocupe toda a largura disponível */
+    max-width: 100vw; /* Impede que ultrapasse a largura da tela */
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 1s ease-in-out; /* Transição de opacidade */
+}
+
+/* Classe para quando o container deve aparecer */
+.intro-container.visible {
+    opacity: 1; /* Tornar o container visível */
+}
+
+.intro-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid #ccc;
+}
+
+.intro-title {
+    font-size: 2rem;
+    color: whitesmoke;
+    max-width: 600px;
+    width: 100%;
+    padding: 0 10px;
+    margin-bottom: 5px;
+}
+
+.intro-subtitle {
+    font-size: 1rem;
+    color: lightgray;
+    max-width: 600px;
+    margin-bottom: 8px;
+    width: 100%;
+    padding: 0 10px;    
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    max-width: 600px;
+    width: 100%;
+    color: white;
+    padding: 0 10px;  /* Evita que o texto vá até a borda */
+
+}
+
+.language-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 16px;
+    background-color: #f7e5e5;
+    color: black;
+    border: none;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    position: fixed;
+    top: 40px;
+    left: 20px;
+    z-index: 1001;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.language-toggle.hidden {
+    display: none; /* Oculta o botão */
+}
+
+.language-toggle:hover {
+    background-color: lightgray;
+    transform: scale(1.05);
+}
+
+.language-toggle .icon-globe,
+.language-toggle .icon-arrow {
+    font-size: 1.2rem;
+}
+
+.language-text {
+    font-weight: 500;
+}
+
+.language-toggle .icon-globe {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.divider-text {
+    font-size: 1.5rem;  /* Fonte maior */
+    font-weight: 600; /* Deixa a fonte mais forte */
+    color: #c8d1ff;  /* Cor da fonte mais destacada */
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase; /* Deixa o texto em caixa alta */
+
+    margin-left: 8px;
+}
+
+.divider-line {
+    width: 100%; /* Garante que a linha ocupe toda a largura */
+    height: 0.5rem; /* Espessura da linha */
+    background-color: #4e2a9b81; /* Linha mais forte */
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+/* Responsividade para telas pequenas */
+@media (max-width: 768px) {
+    .intro-container {
+        padding: 1rem;
+    }
+
+    .intro-image {
+        width: 170px;
+        height: 170px;
+    }
+
+    .intro-text {
+        font-size: 1.2rem;
+        align-items: center;
+        color:white;
+        margin-bottom: 0.1px;
+    }
+
+    button {
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        color: #e0e7ff;
+        position: absolute;
+        left: 20px; /* ajusta a posição para o lado esquerdo */
+        top: 25px;  /* alinhado com a navbar */
+        z-index: 1001; /* acima da navbar */
+    }
+}
+
+@media (max-width: 480px) {
+    button {
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+        position: absolute;
+        left: 20px; /* ajusta a posição para o lado esquerdo */
+        top: 40px;  /* alinhado com a navbar */
+        z-index: 1001; /* acima da navbar */
+    }
+}
