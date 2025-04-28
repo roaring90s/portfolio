@@ -56,8 +56,8 @@ const About = () => {
 
                 <p>
                     {language === 'pt'
-                        ? 'Apresentei meu TCC do curso de Técnico em Informática em dezembro de 2024, obtendo nota 9.90. O projeto consistiu no desenvolvimento de um Sistema de Compra e Venda com foco em boas práticas de documentação e gestão. No momento, aguardo a convocação para o estágio obrigatório pela própria Escola Técnica de Brasília (ETB), necessário para a emissão do certificado final.'
-                        : 'I presented my Final Project for the IT Technician course in December 2024, receiving a grade of 9.90. The project involved the development of a Purchase and Sale System with a strong focus on documentation and IT management practices. Currently, I am waiting to be called for the mandatory internship by the Escola Técnica de Brasília (ETB), which is required to obtain the final certification.'}
+                        ? 'Apresentei meu TCC do curso Técnico em Informática em dezembro de 2024, obtendo nota 9,90. Desenvolvi um Sistema de Compra e Venda com foco em documentação e gestão de TI. Aguardo apenas a realização do estágio obrigatório (carga horária reduzida e em período noturno), etapa final para a certificação pela Escola Técnica de Brasília (ETB), sem impacto na disponibilidade para atuação profissional.'
+                        : 'I presented my Final Project for the IT Technician course in December 2024, achieving a grade of 9.90. I developed a Purchase and Sale System focused on documentation and IT management practices. I am currently awaiting the completion of a mandatory short-term, night-time internship, the final requirement for certification by the Escola Técnica de Brasília (ETB), with no impact on my professional availability.'}
                 </p>
             </div>
         </div>
